@@ -2,21 +2,22 @@ Source: whdd
 Section: utils
 Priority: extra
 Maintainer: Eugene San (eugenesan) <eugenesan@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), libncurses5-dev, libncursesw5-dev, libtinfo-dev, dialog
+Build-Depends: debhelper (>= 8.0.0), libncurses5-dev, libncursesw5-dev, libtinfo-dev, dialog, pkg-config
 Standards-Version: 3.9.4
 Homepage: http://whdd.org/
 Vcs-Browser: https://github.com/whdd/whdd/
 
 Package: whdd
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, smartmontools
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: smartmontools
 Description: diagnostic and recovery tool for block devices
  A diagnostic and recovery tool for block devices
  (near to replace MHDD for Linux).
  .
  Functionality:
  - List available block devices (HDD, Flash drives etc.)
- - List SMART parameters
+ - List S.M.A.R.T. parameters and SMART tests info
  - Perform tests:
    * Read
    * Write zeros
