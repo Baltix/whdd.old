@@ -3,14 +3,11 @@
 
 #include <time.h>
 
-#include "config.h"
 #include "version.h"
 #define WHDD_ABOUT "WHDD - disk drives diagnostic tool\n" \
     "Revision " WHDD_VERSION "\n" \
-    "License: GNU GPL\n" \
-    "Sources: https://github.com/krieger-od/whdd\n" \
-    "Author: Andrey 'Krieger' Utkin <andrey.krieger.utkin@gmail.com> http://blog.krieger.pp.ua\n" \
-    "Directed by: Vitaliy 'Rozik' Roziznany <rozik@homei.net.ua> http://rozik.od.ua\n"
+    "License: GNU GPLv3\n" \
+
 
 #include "objects_def.h"
 #include "device.h"
